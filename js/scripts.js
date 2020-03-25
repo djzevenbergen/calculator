@@ -28,6 +28,33 @@ $(document).ready(function() {
     var result = add(num1, num2);
     $("#output").text(result);
   });
+
+  $("form#subtract").submit(function(event) {
+    event.preventDefault();
+    var num1 = parseInt($("#subtract1").val());
+    var num2 = parseInt($("#subtract2").val());
+    
+    var result = subtract(num1, num2);
+    $("#output").text(result);
+  });
+
+  $("form#multiply").submit(function(event) {
+    event.preventDefault();
+    var num1 = parseInt($("#multiply1").val());
+    var num2 = parseInt($("#multiply2").val());
+    
+    var result = multiply(num1, num2);
+    $("#output").text(result);
+  });
+
+  $("form#divide").submit(function(event) {
+    event.preventDefault();
+    var num1 = parseInt($("#divide1").val());
+    var num2 = parseInt($("#divide2").val());
+    
+    var result = divide(num1, num2);
+    $("#output").text(result);
+  });
 });
 
 
